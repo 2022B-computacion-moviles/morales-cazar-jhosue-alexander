@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925132000008",
+    "project_id": "movcomp-jamc",
+    "storage_bucket": "movcomp-jamc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925132000008:android:ad735370982e481524babd",
+        "android_client_info": {
+          "package_name": "com.example.movcompjamc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925132000008-2o46uelqiri0kokphbk55kmj4cj4dgbu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpU-OlOIjvK_WM1Js027gLY16JeaMdPeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925132000008-2o46uelqiri0kokphbk55kmj4cj4dgbu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
