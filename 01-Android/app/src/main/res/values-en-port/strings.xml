@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bienvenido">Bienvenido a Port-En</string>
+    <color name="color_bienvenido">#8BC34A</color>
+    <color name="color_bg">#157783</color>
+</resources>

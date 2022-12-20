@@ -1,4 +1,5 @@
 import java.util.Date
+import javax.swing.text.StyledEditorKit.BoldAction
 
 fun main(args: Array<String>) {
     println("Hola Mundo!")
@@ -53,6 +54,89 @@ fun main(args: Array<String>) {
     sumaTres.sumar()
     sumaCuatro.sumar()
     println(Suma.historialSumas)
+
+    // ARREGLOS
+    //Tipos de arreglos
+    //Arreglo estatico
+    val arregloEstatico: Array<Int> = arrayOf(1, 2, 3)
+    println(arregloEstatico)
+
+    //Arreglo Dinamicos
+    val arregloDinamico: ArrayList<Int> = arrayListOf(1,2,3,4,5,6,7,8,9,10)
+    println(arregloDinamico)
+    arregloDinamico.add(11)
+    arregloDinamico.add(12)
+    println(arregloDinamico)
+
+    //OPERADORES -> Sirven para los arreglos estaticos y dinamicos
+    // For Each -> Unit
+    //Iterar arreglo
+
+    val respuestaForEach: Unit = arregloDinamico
+        .forEach{
+            valorActual: Int ->
+            println("Valor actual: ${valorActual}")
+        }
+    arregloEstatico
+        .forEachIndexed{ indice: Int, valorActual: Int ->
+            println("Valor ${valorActual} Indice: ${indice}")
+        }
+    println(respuestaForEach)
+
+    //MAP -> Muta el arreglo (Cambia el arrelo)
+    //1) Enviemos el nuevo valor de la iteracion
+    //2) Nos devuelve es un NUEVO ARREGLO con los valores modificados
+
+    val respuestaMap: List<Double> = arregloDinamico
+        .map{valorActual: Int ->
+            return@map valorActual.toDouble() + 100.00
+        }
+
+    println(respuestaMap)
+
+    val respuestaMapDos = arregloDinamico.map {it+15}
+    println(respuestaMapDos)
+
+    //Filter -> FILTAR EL ARREGLO
+    //1) Devolver una expresion (TRUE o FALSE)
+    //2) Nuevo arreglo filtrado
+
+    val respuestaFilter: List<Int> = arregloDinamico
+        .filter{ valorActual: Int ->
+            val mayoresACinco: Boolean = valorActual > 5 //Expresion condicion
+            return@filter mayoresACinco
+        }
+
+    val respuestaFilterDos = arregloDinamico.filter { it <= 5 }
+    println(respuestaFilter)
+    println(respuestaFilterDos)
+
+    //OR y AND
+    //OR -> ANY (Alguno cumple?)
+    //AND -> ALL (Todos cumplen?)
+
+    val respuestaAny: Boolean = arregloDinamico
+        .any { valorActual: Int ->
+            return@any (valorActual > 5)
+        }
+    println(respuestaAny)
+
+    val respuestaAll: Boolean = arregloDinamico
+        .all { valorActual: Int ->
+            return@all (valorActual > 5)
+        }
+    println(respuestaAll)
+
+
+    //REDUCE -> Valor acumulado
+
+    val respuestaReduce: Int = arregloDinamico
+        .reduce{
+            acumulado: Int, valorActual: Int ->
+            return@reduce (acumulado + valorActual)
+        }
+    println(respuestaReduce)
+
 
 }
 

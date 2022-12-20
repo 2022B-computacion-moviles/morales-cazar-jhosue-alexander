@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bienvenido">Bienvenido a Land-En</string>
+    <color name="color_bienvenido">#4C00A8</color>
+    <color name="color_bg">#F44336</color>
+</resources>
