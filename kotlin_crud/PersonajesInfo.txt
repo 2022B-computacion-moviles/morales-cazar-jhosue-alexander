@@ -1,0 +1,2 @@
+Gohan,Dragon Ball Z,15,Masculino,Sayayin/Humano
+Juan,One Piece,,,
