@@ -50,20 +50,20 @@ class EditarPersonaje : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle(Titulo)
         builder.setPositiveButton(
-            "Aceptar"
-        ){_,_-> parametroID(MainPersonaje::class.java)}
+            "Aceptar",
+            null
+        )
 
         val dialog = builder.create()
         dialog.show()
     }
 
-
-    fun parametroID(
+    fun irActividad(
         clase: Class<*>
     ) {
-        val intenProvinciasDePais= Intent(this,clase)
-        intenProvinciasDePais.putExtra("id_Anime", id_Anime)
-        intenProvinciasDePais.putExtra("nombre_Anime",nombre_Anime)
-        startActivity(intenProvinciasDePais)
+        val intent = Intent(this, clase)
+        startActivity(intent)
+
     }
+
 }
