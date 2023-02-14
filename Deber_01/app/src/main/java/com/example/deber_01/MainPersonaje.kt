@@ -1,6 +1,5 @@
 package com.example.deber_01
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -54,7 +53,7 @@ class MainPersonaje : AppCompatActivity() {
         registerForContextMenu(listView)
 
 
-        val ir_animes=findViewById<Button>(R.id.btn_regresarPaises)
+        val ir_animes=findViewById<Button>(R.id.btn_regresarAnimes)
         ir_animes.setOnClickListener {
 
             irActividad(MainActivity::class.java)
@@ -135,14 +134,14 @@ class MainPersonaje : AppCompatActivity() {
     fun parametrosPersonajeSeleccionado(
         clase: Class<*>
     ){
-        val intentPaisSeleccionado=Intent(this, clase)
-        intentPaisSeleccionado.putExtra("id_Personaje", id_Personaje )
-        intentPaisSeleccionado.putExtra("nombre_Personaje", nombre_Personaje )
-        intentPaisSeleccionado.putExtra("edad_Personaje", edad_Personaje)
-        intentPaisSeleccionado.putExtra("genero_Personaje", genero_Personaje )
-        intentPaisSeleccionado.putExtra("id_Anime_Personaje", id_Anime_Personaje)
+        val intentAnimeSeleccionado=Intent(this, clase)
+        intentAnimeSeleccionado.putExtra("id_Personaje", id_Personaje )
+        intentAnimeSeleccionado.putExtra("nombre_Personaje", nombre_Personaje )
+        intentAnimeSeleccionado.putExtra("edad_Personaje", edad_Personaje)
+        intentAnimeSeleccionado.putExtra("genero_Personaje", genero_Personaje )
+        intentAnimeSeleccionado.putExtra("id_Anime_Personaje", id_Anime_Personaje)
 
-        startActivity(intentPaisSeleccionado)
+        startActivity(intentAnimeSeleccionado)
     }
 
     fun irActividad(
