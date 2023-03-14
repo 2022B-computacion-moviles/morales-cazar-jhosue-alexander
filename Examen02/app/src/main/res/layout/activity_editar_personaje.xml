@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarPersonaje">
+
+    <TextView
+        android:id="@+id/tv_EditarPersonaje"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="70dp"
+        android:text="Editar Personaje"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/tv_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nombre:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_EditarPersonaje"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_EditarPersonaje"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EditarPersonaje" />
+
+    <TextView
+        android:id="@+id/tv_Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Edad:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_nombrePersonaje"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_nombrePersonaje"
+        app:layout_constraintTop_toBottomOf="@+id/input_nombrePersonaje" />
+
+    <TextView
+        android:id="@+id/tv_Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Genero:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_edadPersonaje"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_edadPersonaje"
+        app:layout_constraintTop_toBottomOf="@+id/input_edadPersonaje" />
+
+    <Button
+        android:id="@+id/btn_ActualizarPersonaje"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="112dp"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_generoPersonaje" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_nombrePersonaje"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese el nombre"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Nombre"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="@+id/tv_Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Nombre" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_edadPersonaje"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:hint="Ingrese la edad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Edad"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="@+id/tv_Edad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Edad" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_generoPersonaje"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:hint="Ingrese el genero"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Genero"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="@+id/tv_Genero"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Genero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

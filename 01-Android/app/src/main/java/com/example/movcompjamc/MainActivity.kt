@@ -94,6 +94,24 @@ class MainActivity : AppCompatActivity() {
                 irActividad(GRecyclerView::class.java)
             }
 
+        val botonGmaps = findViewById<Button>(R.id.btn_google_maps)
+        botonGmaps
+            .setOnClickListener {
+                irActividad(HGoogleMaps::class.java)
+            }
+
+        val botonFAuth = findViewById<Button>(R.id.btn_intent_firebase_ui)
+        botonFAuth
+            .setOnClickListener {
+                irActividad(IFirebaseUIAuth::class.java)
+            }
+
+        val botonFirestore = findViewById<Button>(R.id.btn_intent_firestore)
+        botonFirestore
+            .setOnClickListener {
+                irActividad(JFirebaseFirestore::class.java)
+            }
+
     }
 
     fun abrirActividadConParametros(

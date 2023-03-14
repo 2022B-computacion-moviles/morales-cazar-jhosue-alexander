@@ -2,6 +2,7 @@ package com.example.movcompjamc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class GRecyclerView : AppCompatActivity() {
@@ -33,5 +34,11 @@ class GRecyclerView : AppCompatActivity() {
         recyclerView.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
         recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         adaptador.notifyDataSetChanged()
+    }
+
+    fun aumentarTotalLikes(){
+        totalLikes = totalLikes + 1
+        val totalLikesTextView = findViewById<TextView>(R.id.tv_total_likes)
+        totalLikesTextView.text = totalLikes.toString()
     }
 }
