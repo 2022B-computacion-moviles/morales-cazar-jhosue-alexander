@@ -128,6 +128,7 @@ class MainPersonaje : AppCompatActivity() {
             .whereEqualTo("personaje_idanime","${anime_papa.idAnime}")
 
 
+
         val lv_personaje_list = findViewById<ListView>(R.id.lv_Personaje)
 
         animeSubcollection.get().addOnSuccessListener { result ->
